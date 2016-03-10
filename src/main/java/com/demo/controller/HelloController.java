@@ -21,4 +21,10 @@ public class HelloController {
     public String printSubHello() {
         return "hello from sub";
     }
+    
+    @RequestMapping(value = "/params", method = RequestMethod.GET)
+    @ResponseBody
+    public String printParams(String name, int age) {
+        return "Params: name=" + name + ", age=" + age;
+    }
 }
