@@ -16,4 +16,9 @@ public class RedirectController {
     public String finalPage() {
         return "final";
     }
+    
+    @RequestMapping(value = "/staticPage", method = RequestMethod.GET)
+    public String staticPage() {
+        return "redirect:/html/final.html";
+    }
 }

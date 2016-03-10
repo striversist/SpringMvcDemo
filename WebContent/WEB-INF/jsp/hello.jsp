@@ -17,5 +17,14 @@
             </tr>
         </table>
     </form:form>
+    
+    <p>Click below button to redirect the result to static html page</p>
+    <form:form method="GET" action="/SpringMvcDemo/staticPage">
+        <table>
+            <tr>
+                <td><input type="submit" value="Redirect Static Page" /></td>
+            </tr>
+        </table>
+    </form:form>
 </body>
 </html>
